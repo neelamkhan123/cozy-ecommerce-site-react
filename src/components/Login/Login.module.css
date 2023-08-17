@@ -1,0 +1,89 @@
+.login {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login .login-container {
+  margin: 4rem 0 2rem 0;
+  height: 700px;
+  width: 1300px;
+  display: flex;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.login .login-container .login-a {
+  width: 900px;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 192, 75);
+}
+
+.login .login-container .login-a .message {
+  color: white;
+}
+
+.login .login-container .login-a .section-heading {
+  font-family: "Noto Serif HK", serif;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.login .login-container .login-a .para-primary {
+  font-size: 1.5rem;
+}
+
+.login .login-container .login-b {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 3rem;
+}
+
+.login .login-container .login-b .section-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.login .login-container .login-b .form {
+  display: flex;
+  flex-direction: column;
+}
+.login .login-container .login-b .form input {
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  height: 2rem;
+  outline: none;
+  border: 1px solid rgba(214, 214, 214, 0.479);
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+  padding: 1rem;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.login .login-container .login-b .btn-login {
+  margin-bottom: 1rem;
+  border-radius: 10px;
+}
+
+.login .login-container .login-b .para-secondary {
+  text-align: end;
+  margin-bottom: 1.5rem;
+
+  cursor: pointer;
+}
+
+.login .login-container .login-b .link {
+  text-decoration: none;
+  margin-left: 0.2rem;
+  color: blue;
+}
+
+.login .login-container .login-b .link:hover {
+  color: grey;
+}

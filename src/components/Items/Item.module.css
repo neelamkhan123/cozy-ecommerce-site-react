@@ -1,0 +1,70 @@
+.item {
+  list-style: none;
+  height: 310px;
+  width: 310px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.item .image {
+  height: 250px;
+  width: 250px;
+  margin-bottom: 0.4rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.item .description {
+  text-align: center;
+}
+
+.item .description .title {
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  font-size: 1.1rem;
+  font-family: var(--title);
+}
+
+.item .description .price {
+  margin: 0;
+  padding: 0;
+}
+
+.item .actions {
+  position: absolute;
+  top: 49%;
+  right: 3%;
+}
+
+.item .actions .icon {
+  color: white;
+  padding: 0.9rem;
+  border-radius: 50%;
+  margin-bottom: 0.4rem;
+  cursor: pointer;
+}
+
+.item .actions .icon > i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+.item .actions .addWishlist {
+  background-color: var(--secondary-color);
+}
+
+.item .actions .addCart {
+  background-color: var(--primary-color);
+}
+
+.item .actions .addCart:hover {
+  background-color: var(--primary-color-hover);
+}

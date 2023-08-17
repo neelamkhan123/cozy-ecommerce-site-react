@@ -1,0 +1,107 @@
+.cart-container {
+  display: grid;
+  grid-gap: 1rem;
+  padding: 2rem 0;
+  overflow-x: hidden;
+}
+
+.cart-container .cart-a {
+  grid-area: 1 / 1 / span 1 / span 4;
+  height: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.cart-container .cart-a h2 {
+  margin-left: 1rem;
+  margin-bottom: 0.5rem;
+  position: absolute;
+  left: 1%;
+  font-family: "Noto Serif HK", serif;
+  color: white;
+}
+
+.cart-container .cart-a .banner-text-one {
+  font-size: 6rem;
+  top: 20%;
+}
+
+.cart-container .cart-a .banner-text-two {
+  font-size: 3rem;
+  top: 65%;
+}
+
+.cart-container .cart-b {
+  grid-area: 2 / 1 / span 4 / span 1;
+  margin-left: 0.5rem;
+  height: 50rem;
+  width: 300px;
+  overflow: hidden;
+  position: relative;
+}
+
+.cart-container .cart-b .side-banner-overlay {
+  position: absolute;
+  top: 0;
+  background-color: var(--primary-color);
+  height: 320px;
+  width: 100%;
+  padding: 1rem;
+}
+
+.cart-container .cart-c {
+  grid-area: 2 / 2 / span 4 / span 3;
+  margin-right: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  width: 1100px;
+}
+
+.cart-container .cart-c .section-heading {
+  color: black;
+  font-weight: bold;
+  font-size: 2rem;
+  font-family: "Noto Serif HK", serif;
+  text-align: center;
+}
+
+.cart-container .cart-c .cart-list {
+  height: 700px;
+  overflow-y: scroll;
+}
+
+.cart-container .cart-c .cart-list::-webkit-scrollbar {
+  width: 4px;
+  background-color: transparent;
+}
+
+.cart-container .cart-c .cart-list::-webkit-scrollbar-thumb {
+  background-color: rgb(243, 243, 243);
+  border-radius: 50%;
+}
+
+.cart-container .cart-d {
+  grid-area: 5 / 2 / span 1 / span 3;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 1100px;
+}
+
+.cart-container .cart-d .section-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  font-family: "Noto Serif HK", serif;
+}
+
+.cart-container .cart-d .section-title .total-amount {
+  font-family: "Noto Sans", sans-serif;
+  margin-left: 0.2rem;
+}
+
+.cart-container .cart-d .btn {
+  border-radius: 10px;
+  margin-left: 0.5rem;
+}

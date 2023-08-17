@@ -1,25 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import RootLayout from "./pages/RootLayout";
+import HomePage from "./pages/HomePage";
+import LoginPage from "./pages/LoginPage";
+import CartPage from "./pages/CartPage";
+import WishlistPage from "./pages/WishlistPage";
+import HomeProducts from "./pages/Products/HomeProducts";
+import GardenProducts from "./pages/Products/GardenProducts";
+import KitchenProducts from "./pages/Products/KitchenProducts";
+import DecorProducts from "./pages/Products/DecorProducts";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <RootLayout />,
+    children: [
+      { index: true, element: <HomePage /> },
+      { path: "/login", element: <LoginPage /> },
+      { path: "/wishlist", element: <WishlistPage /> },
+      { path: "/cart", element: <CartPage /> },
+      {
+        path: "/products",
+        children: [
+          {
+            path: "/products/home",
+            element: <HomeProducts />,
+          },
+          { path: "/products/garden", element: <GardenProducts /> },
+          { path: "/products/kitchen", element: <KitchenProducts /> },
+          { path: "/products/decor", element: <DecorProducts /> },
+        ],
+      },
+    ],
+  },
+]);
+
+const App = () => {
+  return <RouterProvider router={router} />;
+};
 
 export default App;

@@ -1,0 +1,14 @@
+.green-button {
+  padding: 1rem;
+  border: none;
+  background-color: var(--primary-color);
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+  font-weight: bold;
+}
+
+.green-button:hover {
+  background-color: var(--primary-color-hover);
+}

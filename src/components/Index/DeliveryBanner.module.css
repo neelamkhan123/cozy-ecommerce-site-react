@@ -1,0 +1,32 @@
+.section {
+  background-color: var(--background-color-2);
+  height: auto;
+  padding: 2rem 1rem 2.5rem 1rem;
+  margin: 0;
+}
+
+.section .delivery-options {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  list-style: none;
+}
+
+.section .delivery-options .option {
+  padding: 1rem;
+  height: 150px;
+  width: 150px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 4px solid #333;
+}
+
+.section .delivery-options .option .icon {
+  font-size: 2rem;
+}
+
+.section .delivery-options .option .para-secondary {
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  font-weight: bold;
+}

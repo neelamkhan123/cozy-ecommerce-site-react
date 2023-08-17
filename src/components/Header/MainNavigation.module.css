@@ -1,0 +1,56 @@
+header {
+  position: sticky;
+  height: 100px;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.header {
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.header .user-icons {
+  position: absolute;
+  right: 2%;
+  display: flex;
+  list-style: none;
+}
+
+.header .user-icons .user-icon {
+  padding: 1rem;
+  font-size: 1.3rem;
+  display: flex;
+}
+
+.header .user-icons .user-icon a {
+  color: black;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+}
+
+.header .user-icons .user-icon a:hover {
+  color: var(--primary-color);
+}
+
+.header .user-icons .user-icon .count {
+  background-color: white;
+  font-size: 0.9rem;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  position: relative;
+  top: -10px;
+  left: -7px;
+  font-weight: bold;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.2rem;
+}

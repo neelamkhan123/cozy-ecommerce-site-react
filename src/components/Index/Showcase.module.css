@@ -1,0 +1,68 @@
+.showcase-container {
+  position: relative;
+  top: 0px;
+  z-index: -1;
+  margin: 0;
+  overflow: hidden;
+  background-color: var(--background-color);
+}
+
+.showcase {
+  height: 1000px;
+  width: 1600px;
+}
+
+.showcase-text-container {
+  position: absolute;
+  top: 10%;
+  left: 3%;
+}
+
+.sale-banner {
+  position: absolute;
+  bottom: 25%;
+  right: 3%;
+  background-color: white;
+  border: var(--secondary-color) solid 8px;
+  height: 250px;
+  width: 700px;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text-position-one {
+  width: 360px;
+  font-size: 11.5rem;
+  font-family: "Noto Serif HK", serif;
+
+  margin-right: 0.2rem;
+  display: flex;
+  align-items: center;
+}
+
+.text-position-two {
+  width: 240px;
+}
+
+.percentage {
+  font-size: 6rem;
+  color: var(--primary-color);
+  position: absolute;
+  right: 1%;
+  top: 0;
+  font-family: "Noto Serif HK", serif;
+}
+
+.text {
+  font-size: 1.7rem;
+  font-weight: bold;
+  text-align: end;
+  display: block;
+  width: 240px;
+  height: 120px;
+  position: absolute;
+  bottom: 0;
+  font-family: "Noto Serif HK", serif;
+}

@@ -1,0 +1,23 @@
+.link {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+  display: inline-block;
+  margin: 0.5rem;
+}
+
+.logo {
+  padding: 0.5rem;
+  height: auto;
+  width: 200px;
+  border-radius: 20px;
+  background-color: var(--background-color);
+  font-family: "Noto Serif HK", serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.green-z {
+  color: var(--primary-color);
+}

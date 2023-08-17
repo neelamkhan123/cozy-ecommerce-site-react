@@ -1,0 +1,53 @@
+.nav {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  right: 0;
+}
+
+.nav .navbar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0.5rem 0;
+  background-color: var(--background-color);
+  list-style: none;
+  transition: all 0.2s ease-in-out;
+  opacity: 0.9;
+}
+
+.nav .navbar li .title {
+  color: black;
+  padding: 0 2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.nav .navbar li .title:hover {
+  color: var(--primary-color);
+}
+
+.nav .navbar li .sub-nav {
+  height: 150px;
+  margin: 1rem 0;
+  list-style: none;
+}
+
+.nav .navbar li .sub-nav .sub-title {
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+  padding: 0.5rem 0;
+}
+
+.nav .navbar li .sub-nav .sub-title a {
+  text-decoration: none;
+  color: black;
+  transition: all 0.2s ease-in-out;
+}
+
+.nav .navbar li .sub-nav .sub-title a:hover {
+  color: var(--primary-color);
+}

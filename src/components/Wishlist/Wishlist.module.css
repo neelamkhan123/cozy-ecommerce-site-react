@@ -1,0 +1,84 @@
+.wishlist-container {
+  display: grid;
+  grid-gap: 1rem;
+  padding: 2rem 0;
+  overflow-x: hidden;
+}
+
+.wishlist-container .wishlist-a {
+  grid-area: 1 / 1 / span 1 / span 4;
+  height: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.wishlist-container .wishlist-a h2 {
+  margin-left: 1rem;
+  margin-bottom: 0.5rem;
+  position: absolute;
+  left: 1%;
+  font-family: "Noto Serif HK", serif;
+  color: white;
+}
+
+.wishlist-container .wishlist-a .banner-text-one {
+  font-size: 6rem;
+  top: 20%;
+}
+
+.wishlist-container .wishlist-a .banner-text-two {
+  font-size: 3rem;
+  top: 65%;
+}
+
+.wishlist-container .wishlist-b {
+  grid-area: 2 / 1 / span 3 / span 1;
+  margin-left: 0.5rem;
+  height: 50rem;
+  width: 300px;
+  overflow: hidden;
+  position: relative;
+}
+
+.wishlist-container .wishlist-b .side-banner-overlay {
+  position: absolute;
+  top: 0;
+  background-color: var(--primary-color);
+  height: 320px;
+  width: 100%;
+  padding: 1rem;
+}
+
+.wishlist-container .wishlist-c {
+  grid-area: 2 / 2 / span 3 / span 3;
+  margin-right: 0.5rem;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  width: 1100px;
+}
+
+.wishlist-container .wishlist-c .section-heading {
+  color: black;
+  font-weight: bold;
+  font-size: 2rem;
+  font-family: "Noto Serif HK", serif;
+  text-align: center;
+}
+
+.wishlist-container .wishlist-c .wishlist-list {
+  height: 750px;
+  overflow-y: scroll;
+}
+
+.wishlist-container .wishlist-c .wishlist-list::-webkit-scrollbar {
+  width: 4px;
+  background-color: transparent;
+}
+
+.wishlist-container .wishlist-c .wishlist-list::-webkit-scrollbar-thumb {
+  background-color: rgb(243, 243, 243);
+  border-radius: 50%;
+}

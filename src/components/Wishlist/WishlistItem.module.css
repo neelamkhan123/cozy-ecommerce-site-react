@@ -1,0 +1,34 @@
+.wishlist-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px,
+    rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
+}
+
+.wishlist-item .item-container {
+  display: flex;
+  align-items: center;
+}
+
+.wishlist-item .item-container .image {
+  height: 150px;
+  width: 150px;
+  margin-right: 1rem;
+}
+
+.wishlist-item .item-container .description .title {
+  font-weight: bold;
+  font-family: "Noto Serif HK", serif;
+  font-size: 1.2rem;
+}
+
+.wishlist-item .delete-btn {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.wishlist-item .delete-btn:hover {
+  color: red;
+}

@@ -1,0 +1,112 @@
+.template-container {
+  display: grid;
+  grid-gap: 1rem;
+  padding: 2rem 0;
+  overflow-x: hidden;
+}
+
+.template-container .template-a {
+  grid-area: 1 / 1 / span 1 / span 4;
+  height: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.template-container .template-a h2 {
+  margin-left: 1rem;
+  margin-bottom: 0.5rem;
+  position: absolute;
+  left: 1%;
+  font-family: "Noto Serif HK", serif;
+  color: white;
+}
+
+.template-container .template-a .banner-text-one {
+  font-size: 6rem;
+  top: 20%;
+}
+
+.template-container .template-a .banner-text-two {
+  font-size: 3rem;
+  top: 65%;
+}
+
+.template-container .template-b {
+  grid-area: 2 / 1 / span 1 / span 1;
+  background-color: rgb(245, 245, 245);
+  padding: 1rem;
+  width: auto;
+  border-radius: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  margin-left: 0.5rem;
+}
+
+.template-container .template-b .section-title {
+  color: grey;
+  margin-bottom: 0.5rem;
+}
+
+.template-container .template-b .refine .refine-by {
+  box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px,
+    rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+}
+
+.template-container .template-b .refine .refine-by label {
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.template-container .template-b .refine .refine-by label:hover {
+  color: grey;
+}
+
+.template-container .template-c {
+  grid-area: 2 / 2 / span 3 / span 2;
+  margin-right: 0.5rem;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.template-container .template-c .section-heading {
+  color: black;
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-family: "Noto Serif HK", serif;
+}
+
+.template-container .template-c .template-list {
+  height: auto;
+}
+
+.template-container .template-d {
+  grid-area: 2 / 4 / span 3 / span 1;
+  height: 70rem;
+  width: 300px;
+  overflow: hidden;
+  position: relative;
+  margin-right: 0.5rem;
+}
+
+.template-container .template-d .banner-img {
+  position: absolute;
+  left: -60%;
+  bottom: 0;
+}
+
+.template-container .template-d .side-banner-overlay {
+  position: absolute;
+  top: 0;
+  background-color: var(--primary-color);
+  height: 320px;
+  width: 100%;
+  padding: 1rem;
+}
