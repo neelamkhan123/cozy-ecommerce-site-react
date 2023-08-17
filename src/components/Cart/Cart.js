@@ -17,7 +17,7 @@ const Cart = () => {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getTotal());
-  }, [cart]);
+  }, [cart, dispatch]);
 
   const [showCartMessage, setShowCartMessage] = useState("");
 
